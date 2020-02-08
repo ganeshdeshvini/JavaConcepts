@@ -1,0 +1,3 @@
+==== A *generic type* is a class that is parameterized with type arguments, for example, ArrayList<T>.
+==== A parameterized type is a class where the type parameter is instantiated with a fixed argument, for example, ArrayList<Long>.
+==== A raw type is a generic type that is not parameterized with anything, like new ArrayList().

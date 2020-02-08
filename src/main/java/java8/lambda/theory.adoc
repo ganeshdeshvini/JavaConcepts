@@ -1,0 +1,13 @@
+[source]
+----
+JAVA-7: public int double(int a)    { return a * a; }
+JAVA-8:                  (int a) -> { return a * a; }
+JAVA-8:                  (int a) -> a * a;
+----
+
+[source]
+----
+JAVA-7: public int multiple(int a, int b)    { return a * b; }
+JAVA-8:                    (int a, int b) -> { return a * b; }
+JAVA-8:                    (int a, int b) -> a * b;
+----
