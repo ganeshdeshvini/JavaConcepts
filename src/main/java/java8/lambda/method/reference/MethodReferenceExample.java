@@ -1,6 +1,14 @@
 package java8.lambda.method.reference;
 
 public class MethodReferenceExample {
+    interface ZeroParameter {
+        void printSomething();
+    }
+
+    interface NParameter {
+        void square(int n);
+    }
+
     public static void main(String[] args) {
         ZeroParameter zeroParameter = () -> printSomething();
         ZeroParameter zeroParameter2 = MethodReferenceExample::printSomething;
@@ -21,12 +29,4 @@ public class MethodReferenceExample {
     private void square(int n) {
         System.out.println(n * n);
     }
-}
-
-interface ZeroParameter {
-    void printSomething();
-}
-
-interface NParameter {
-    void square(int n);
 }

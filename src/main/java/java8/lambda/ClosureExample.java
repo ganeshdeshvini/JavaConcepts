@@ -1,6 +1,10 @@
 package java8.lambda;
 
 public class ClosureExample {
+    interface Process {
+        void process(int x);
+    }
+
     public static void main(String[] args) {
         int a = 10;
         int b = 20;
@@ -12,6 +16,3 @@ public class ClosureExample {
     }
 }
 
-interface Process {
-    void process(int x);
-}

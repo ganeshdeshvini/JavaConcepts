@@ -6,11 +6,22 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class SubsetSuperSetIds {
+    static class DataHolder {
+        Long id;
+
+        public DataHolder() {
+        }
+
+        public DataHolder(Long id) {
+            this.id = id;
+        }
+    }
+
     public static void main(String[] args) {
         solution2();
     }
 
-    static void solution2(){
+    static void solution2() {
         List<DataHolder> subset = Arrays.asList(
                 new DataHolder(1L),
                 new DataHolder(2L));
@@ -19,7 +30,7 @@ public class SubsetSuperSetIds {
         System.out.println(superset.stream().filter(id -> !subsetIds.contains(id)).collect(Collectors.toList()));
     }
 
-    static void solution1(){
+    static void solution1() {
         List<DataHolder> subset = Arrays.asList(
                 new DataHolder(1L),
                 new DataHolder(2L));
@@ -32,6 +43,7 @@ public class SubsetSuperSetIds {
         ).collect(Collectors.toList());
         System.out.println(newList);
     }
+
     private static <T> Predicate<T> negate(Predicate<T> predicate) {
         return predicate.negate();
     }

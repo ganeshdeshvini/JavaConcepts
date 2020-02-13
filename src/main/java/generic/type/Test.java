@@ -1,6 +1,18 @@
 package generic.type;
 
 public class Test {
+    static class Box<T> {
+        private T t;
+
+        public void set(T t) {
+            this.t = t;
+        }
+
+        public T get() {
+            return this.t;
+        }
+    }
+
     public static void main(String[] args) {
         Box<Integer> integerBox = new Box<>();
         integerBox.set(10);

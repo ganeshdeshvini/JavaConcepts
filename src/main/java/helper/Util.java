@@ -9,6 +9,14 @@ public class Util {
     }
 
     public static long getCurrentThreadId() {
-        return Thread.currentThread().getId();
+        return getCurrentThread().getId();
+    }
+
+    public static String getCurrentThreadName() {
+        return getCurrentThread().getName();
+    }
+
+    public static Thread getCurrentThread() {
+        return Thread.currentThread();
     }
 }

@@ -3,6 +3,11 @@ package generic.wildcard.important;
 import java.util.ArrayList;
 
 public class WildcardExample {
+    static class Employee {
+    }
+
+    static class Accountant extends Employee {
+    }
 
     public static void main(String[] args) {
         Employee employee = new Employee();
@@ -33,14 +38,7 @@ public class WildcardExample {
         employees4 = objects;  //Valid
 
 
-
     }
 }
 
-class Employee {
 
-}
-
-class Accountant extends Employee {
-
-}

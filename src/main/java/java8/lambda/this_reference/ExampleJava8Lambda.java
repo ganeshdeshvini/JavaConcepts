@@ -1,6 +1,9 @@
 package java8.lambda.this_reference;
 
 public class ExampleJava8Lambda {
+    interface Process {
+        void process(int i);
+    }
 
     public static void main(String[] args) {
         ExampleJava8Lambda exampleJava8Lambda = new ExampleJava8Lambda();
@@ -21,7 +24,8 @@ public class ExampleJava8Lambda {
         process.process(i);
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return "Called from ExampleAnonymousInnerClass class";
     }
 }
